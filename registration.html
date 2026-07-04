@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Hanan Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===========================
+         NAVBAR - Site Navigation
+    =========================== -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Hanan <span>Academy</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="registration.html" class="active">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+
+    <!-- ===========================
+         PAGE BANNER - Registration Title
+    =========================== -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Course Registration</h1>
+            <p>Fill in the form below to enroll in your chosen course</p>
+        </div>
+    </section>
+    <!-- END PAGE BANNER -->
+
+
+    <!-- ===========================
+         REGISTRATION FORM SECTION
+    =========================== -->
+    <section class="registration-section">
+        <div class="container">
+
+            <!-- Form Card -->
+            <div class="form-wrapper">
+                <h2>Student Registration</h2>
+                <p>All fields marked with  are required. We will contact you within 24 hours.</p>
+
+                <!-- Registration Form -->
+                <!-- Note: action="" should be replaced with your server-side form handler -->
+                <form action="#" method="POST">
+                    <fieldset>
+
+                    <!-- Personal Information -->
+                    <!-- First Name and Last Name - side by side -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name :</label>
+                            <input type="text" id="first-name" name="first_name" placeholder="Enter your first name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name :</label>
+                            <input type="text" id="last-name" name="last_name" placeholder="Enter your last name" required>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email Address :</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <label for="phone">Phone Number :</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+252 XX XXX XXXX" required>
+                    </div>
+
+                    <!-- Age -->
+                    <div class="form-group">
+                        <label for="age">Age :</label>
+                        <input type="number" id="age" name="age" placeholder="Your age" min="14" max="60" required>
+                    </div>
+
+                    <!-- Course Selection -->
+                    <div class="form-group">
+                        <label for="course">Select Course :</label>
+                        <select id="course" name="course" required>
+                            <option value=""> Choose a course </option>
+                            <option value="ai">Artificial Intelligence</option>
+                            <option value="graphic-design">Graphic Design</option>
+                            <option value="video-editing">Video Editing</option>
+                            <option value="web-design">Web Design</option>
+                            <option value="web-dev">Web Development</option>
+                            <option value="programming">Programming Fundamentals</option>
+                            <option value="ms-office">Microsoft Office</option>
+                            <option value="digital-marketing">Digital Marketing</option>
+                            <option value="cyber-security">Cyber Security Basic</option>
+                            <option value="freelancing">Freelancing</option>
+                        </select>
+                    </div>
+
+                    <!-- Experience Level -->
+                    <div class="form-group">
+                        <label for="level">Your Current Level</label>
+                        <select id="level" name="level">
+                            <option value=""> Select your level </option>
+                            <option value="beginner">Complete Beginner</option>
+                            <option value="some-knowledge">Some Basic Knowledge</option>
+                            <option value="intermediate">Intermediate</option>
+                        </select>
+                    </div>
+
+                    <!-- Message / Extra Info -->
+                    <div class="form-group">
+                        <label for="message">Tell us about yourself (optional)</label>
+                        <textarea id="message" name="message" placeholder="Why do you want to join this course? Any questions?"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary form-submit">Submit Registration</button>
+                    
+                    </fieldset>
+                </form>
+                <!-- END FORM -->
+
+            </div>
+
+        </div>
+    </section>
+    <!-- END REGISTRATION SECTION -->
+
+
+    <!-- ===========================
+         FOOTER - Site Footer
+    =========================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">Hanan <span>Academy</span></div>
+                    <p>A digital learning platform helping students and professionals learn practical digital skills in Somalia and East Africa.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="registration.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hanan Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+</body>
+</html>
